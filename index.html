@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/3a6f024b62.js" crossorigin="anonymous"></script>
   <script src="jquery-3.6.3.min.js"></script>
 
   <script src="js/funcionesCV.js"></script>
@@ -19,39 +20,41 @@
 <body>
 
   <link rel="StyleSheet" href="css/estilosCV.css" type="text/css">
-  <!-- <img id="foto" src="tt" alt="text"> -->
-  <!-- <nav class="navbar  sticky-top" style="background-color: blue;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Default</a>
-    </div>
-  </nav> -->
-  <!-- <div class="flex-container"> -->
-    <div   class="    sticky-top   "  id="div-nav">       <!-- lo tengo que hacer absolute al DIV y ponerle posicion fixed// DIV NORMAL y posicion STIKY -->
-    <nav class="navbar       "     id="nav">
-      <!-- <div class="container-fluid flex-column" id="cont-nav"> -->
-        <div id="nav-row" class="row text-center container-fluid"  >
-          <div class="col col-xxl-12 align-self-end"  >
-            <a class="navbar-brand" href="#">Default</a>
-          </div>
-          <div class="col col-xxl-12">
-            <a class="navbar-brand" href="#">Default</a>
-          </div>
-          <div class="col col-xxl-12">
-            <a class="navbar-brand" href="#">Default</a>
-          </div>
+ 
+  <!-- <div class="    sticky-top   " id="div-nav">
+     <nav class="navbar       " id="nav">
+       <div id="nav-row" class="row text-center container-fluid">
+        <div class="col col-xxl-12 align-self-end">
 
+          <a class="navbar-brand" href="#"> <i class="fa-solid fa-phone"></i>
+            <div>
+              Informacion Personal
+            </div>
+
+          </a>
+          <span>osea "YO"</span>
         </div>
-        <!-- <a class="navbar-brand" href="#">Default</a>
-       
-        <a class="navbar-brand" href="#">Default</a>
-       
-        <a class="navbar-brand" href="#">Default</a> -->
-      <!-- </div> -->
-    </nav></div>
+        <div class="col col-xxl-12">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-phone"></i>
+            <div>
+              Contacto
+            </div>
+            <span>llamen por favor :(</span>
 
-    <!-- <div class="container text-center">
-      <div class="row">
-        <div class="col align-self-start">
+          </a>
+        </div>
+        <div class="col col-xxl-12">
+          <a class="navbar-brand" href="#">Default</a>
+        </div>
+
+      </div>
+       
+    </nav>
+  </div> -->
+
+  <!-- <div class="container text-center ">
+      <div class="row ">
+        <div class="col align-self-start sticky-top">
           One of three columns
         </div>
         <div class="col align-self-center">
@@ -73,8 +76,52 @@
           </nav>
         </div> me-5-->
 
+<div class="row">
+        <div class="col">
+          <div class="    sticky-top   " id="div-nav">
+            <!-- lo tengo que hacer absolute al DIV y ponerle posicion fixed// DIV NORMAL y posicion STIKY -->
+            <nav class="navbar       " id="nav">
+              <!-- <div class="container-fluid flex-column" id="cont-nav"> -->
+              <div id="nav-row" class="row text-center container-fluid">
+                <div class="col col-xxl-12 align-self-end">
+        
+                  <a class="navbar-brand" href="#"> <i class="fa-solid fa-phone"></i>
+                    <div>
+                      Informacion Personal
+                    </div>
+        
+                  </a>
+                  <span>osea "YO"</span>
+                </div>
+                <div class="col col-xxl-12">
+                  <a class="navbar-brand" href="#"><i class="fa-solid fa-phone"></i>
+                    <div>
+                      Contacto
+                    </div>
+                    <span>llamen por favor :(</span>
+        
+                  </a>
+                </div>
+                <div class="col col-xxl-12">
+                  <a class="navbar-brand" href="#">Default</a>
+                </div>
+        
+              </div>
+              <!-- <a class="navbar-brand" href="#">Default</a>
+               
+                <a class="navbar-brand" href="#">Default</a>
+               
+                <a class="navbar-brand" href="#">Default</a> -->
+              <!-- </div> -->
+            </nav>
+          </div>
+        </div>
+       
+      
+<div class="col">
+    <div class="container-fluid container shadow rounded    carta" id="carta">
 
-    <div class="container-fluid container shadow rounded me-5  carta" id="carta" >
+      
       <div class="row text-center align-items-center cabezera">
         <div class="col-12 col-lg-6">
           <h1 id="nombre" style="margin: auto;"> </h1>
@@ -87,12 +134,95 @@
 
           </div>
         </div>
-      
+        <div class="col">
+          <p>
+            Hola soy Alexis, consumí la <a href="https://randomuser.me/" class="link-dark fw-bold" target="_blank"
+              rel="noopener noreferrer"> API "RANDOM USER GENERATOR"</a>
+            para no tener que ingresar mis datos personales, de la misma forma, casi toda la información para realizar
+            este CV la corresponde a esta API, la cual
+            sirve para generar datos de usuarios aleatorios.Es como Lorem Ipsum, pero para las personas.
 
+          </p>
+          <div class="col">
+            <!-- <div class="container-fluid">
+                  <div class="row text-center align-items-center">
+                    <div class="col">
+                  <p>
+                    INFORACIÓN PERSONAL  
+                  </p>
+                </div>
+                <div class="col-6">
+
+                </div>
+                <div class="col-6">
+
+                </div>
+              </div>
+          </div> -->
+            <p> INFORMACIÓN PERSONAL</p>
+            <div class="izquierda">
+              <ul>
+                <li>Nombre</li>
+                <li>Nacimiento</li>
+                <li>Pais</li>
+                <li>Ciudad</li>
+              </ul>
+            </div>
+
+            <div class="derecha">
+              <ul>
+                <li>
+                  <div id="nombre"></div>
+                </li>
+                <li>
+                  <div id="nacimiento"></div>
+                </li>
+                <li>
+                  <div id="pais"></div>
+                </li>
+                <li>
+                  <div id="ciudad"></div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+        <hr>
       </div>
 
-      <div class="row">
+      <div class="row text-center align-items-center">
         <div class="col  ">
+          <p>
+            INFORMACIÓN DE CONTACTO
+          </p>
+
+          <div class="izquierda">
+            <ul>
+              <li>Celular</li>
+              <li>Teléfeno</li>
+              <li>Mail</li>
+              <li>Calle</li>
+            </ul>
+          </div>
+
+          <div class="derecha">
+            <ul>
+              <li>
+                <div id="celular"></div>
+              </li>
+              <li>
+                <div id="telefono"></div>
+              </li>
+              <li>
+                <div id="mail"></div>
+              </li>
+              <li>
+                <div id="calle"></div>
+              </li>
+            </ul>
+          </div>
           <p>
             Lorem ipsum dolor sit amet. Sit similique velit qui exercitationem voluptatum qui dolorem quis est
             ipsam commodi aut esse reprehenderit! Sed tenetur distinctio et illum distinctio sed neque vitae et
@@ -105,172 +235,9 @@
             voluptas eos nobis nobis ab quam omnis in mollitia quos aut consectetur consectetur ut deleniti
             soluta aut error sapiente.
 
-            Ad ipsum rerum aut molestiae consequatur quo sunt quia ut commodi illum vel dolorum dolores ut
-            sapiente laudantium cum quia doloribus! Quo eveniet voluptatibus qui officiis obcaecati aut iure
-            sequi in alias odit cum harum aliquid aut libero architecto est doloribus architecto. Et voluptates
-            quis sed ipsa nemo vel dignissimos dicta et iste odit. Eos minima velit et tenetur quidem non autem
-            vitae sed recusandae maxime. Qui dolores unde ut unde blanditiis non sint internos ut eligendi
-            obcaecati 33 omnis possimus qui quas tempore sed voluptate nihil. 33 itaque esse est dolore soluta
-            ut consequatur consequatur qui labore quisquam sit autem consequatur qui adipisci beatae vel
-            officiis facilis. Vel velit exercitationem ut autem voluptatibus eum molestiae rerum non optio modi
-            sed architecto Quis. Est reiciendis doloremque aut rerum temporibus non odio dolore ab enim dolor
-            quo corrupti aliquam. Hic deleniti dicta ut rerum voluptas eum accusantium facere id dolor laborum.
-            Hic temporibus iusto ad explicabo officiis ut totam aliquid ex fuga iusto? Sed sunt voluptates ab
-            nulla debitis non sunt tenetur eum autem possimus qui exercitationem deserunt ut Quis libero. Est
-            aspernatur reiciendis aut placeat ipsam qui Quis suscipit non quae excepturi. Ad omnis similique vel
-            suscipit maiores et officiis earum et officiis sint qui ipsa explicabo. Ab assumenda ipsum a
-            consequatur nesciunt a magni dignissimos non labore deserunt cum cupiditate neque.
 
-            Et sequi dolor in nisi reiciendis ut saepe corrupti aut magni quia qui saepe consequuntur. Hic
-            consequatur voluptas et enim adipisci sit quisquam error eum consequatur neque. 33 laboriosam
-            laborum ea commodi dolores est sequi eius. Non alias quod aut earum molestias est porro impedit est
-            quisquam Quis et dolorem obcaecati est praesentium necessitatibus qui nisi quasi. Quo sapiente neque
-            ea architecto provident qui molestias eveniet sed suscipit reiciendis aut distinctio doloribus. Ut
-            asperiores aperiam et praesentium provident hic numquam voluptas rem dolor necessitatibus est velit
-            pariatur et incidunt recusandae est beatae voluptas? Eum voluptas natus id delectus magni non
-            voluptas quae aut veniam minima. Et velit dolor non voluptatem reiciendis et consectetur ipsam et
-            excepturi culpa et delectus magni aut reprehenderit perferendis vel omnis dolores. Et quam omnis et
-            minima quibusdam et odio fugit sed molestiae deleniti cum perferendis vitae et dolor nihil eos totam
-            voluptatem. Id facilis ipsam eos sint molestiae in temporibus iusto non recusandae molestias ad
-            deleniti sequi! Est voluptatem pariatur qui officia odit et placeat nostrum id doloribus sint qui
-            aperiam ipsum qui quod amet et neque accusamus. Et sunt quis hic voluptatem numquam At magni
-            quaerat. Vel reprehenderit repellat ea reiciendis obcaecati aut esse quibusdam? Qui galisum
-            similique ut sunt ratione ut rerum deserunt et architecto impedit ut dolor voluptate et possimus
-            quia.
 
-            Lorem ipsum dolor sit amet. Sit similique velit qui exercitationem voluptatum qui dolorem quis est
-            ipsam commodi aut esse reprehenderit! Sed tenetur distinctio et illum distinctio sed neque vitae et
-            Quis nemo est doloremque tempora qui obcaecati quidem et ullam aliquid? Ut incidunt voluptas ea
-            nostrum quae et dolorem accusantium! Ea nulla harum sit earum aperiam aut accusantium galisum ut
-            nihil ipsam eos consequuntur excepturi eos dolores galisum vel nemo quam. Ut odit nihil sit sequi
-            iusto non aliquam nihil ut blanditiis explicabo At cupiditate voluptatem. Non rerum explicabo est
-            dolore sunt aut quidem tempore eos placeat odit sit officiis nemo. Ut rerum tempora a dolore
-            excepturi quo delectus magnam et nobis autem qui nihil porro ea numquam provident. Sit voluptate
-            voluptas eos nobis nobis ab quam omnis in mollitia quos aut consectetur consectetur ut deleniti
-            soluta aut error sapiente.
 
-            Ad ipsum rerum aut molestiae consequatur quo sunt quia ut commodi illum vel dolorum dolores ut
-            sapiente laudantium cum quia doloribus! Quo eveniet voluptatibus qui officiis obcaecati aut iure
-            sequi in alias odit cum harum aliquid aut libero architecto est doloribus architecto. Et voluptates
-            quis sed ipsa nemo vel dignissimos dicta et iste odit. Eos minima velit et tenetur quidem non autem
-            vitae sed recusandae maxime. Qui dolores unde ut unde blanditiis non sint internos ut eligendi
-            obcaecati 33 omnis possimus qui quas tempore sed voluptate nihil. 33 itaque esse est dolore soluta
-            ut consequatur consequatur qui labore quisquam sit autem consequatur qui adipisci beatae vel
-            officiis facilis. Vel velit exercitationem ut autem voluptatibus eum molestiae rerum non optio modi
-            sed architecto Quis. Est reiciendis doloremque aut rerum temporibus non odio dolore ab enim dolor
-            quo corrupti aliquam. Hic deleniti dicta ut rerum voluptas eum accusantium facere id dolor laborum.
-            Hic temporibus iusto ad explicabo officiis ut totam aliquid ex fuga iusto? Sed sunt voluptates ab
-            nulla debitis non sunt tenetur eum autem possimus qui exercitationem deserunt ut Quis libero. Est
-            aspernatur reiciendis aut placeat ipsam qui Quis suscipit non quae excepturi. Ad omnis similique vel
-            suscipit maiores et officiis earum et officiis sint qui ipsa explicabo. Ab assumenda ipsum a
-            consequatur nesciunt a magni dignissimos non labore deserunt cum cupiditate neque.
-
-            Et sequi dolor in nisi reiciendis ut saepe corrupti aut magni quia qui saepe consequuntur. Hic
-            consequatur voluptas et enim adipisci sit quisquam error eum consequatur neque. 33 laboriosam
-            laborum ea commodi dolores est sequi eius. Non alias quod aut earum molestias est porro impedit est
-            quisquam Quis et dolorem obcaecati est praesentium necessitatibus qui nisi quasi. Quo sapiente neque
-            ea architecto provident qui molestias eveniet sed suscipit reiciendis aut distinctio doloribus. Ut
-            asperiores aperiam et praesentium provident hic numquam voluptas rem dolor necessitatibus est velit
-            pariatur et incidunt recusandae est beatae voluptas? Eum voluptas natus id delectus magni non
-            voluptas quae aut veniam minima. Et velit dolor non voluptatem reiciendis et consectetur ipsam et
-            excepturi culpa et delectus magni aut reprehenderit perferendis vel omnis dolores. Et quam omnis et
-            minima quibusdam et odio fugit sed molestiae deleniti cum perferendis vitae et dolor nihil eos totam
-            voluptatem. Id facilis ipsam eos sint molestiae in temporibus iusto non recusandae molestias ad
-            deleniti sequi! Est voluptatem pariatur qui officia odit et placeat nostrum id doloribus sint qui
-            aperiam ipsum qui quod amet et neque accusamus. Et sunt quis hic voluptatem numquam At magni
-            quaerat. Vel reprehenderit repellat ea reiciendis obcaecati aut esse quibusdam? Qui galisum
-            similique ut sunt ratione ut rerum deserunt et architecto impedit ut dolor voluptate et possimus
-            quia.
-
-            Lorem ipsum dolor sit amet. Sit similique velit qui exercitationem voluptatum qui dolorem quis est
-            ipsam commodi aut esse reprehenderit! Sed tenetur distinctio et illum distinctio sed neque vitae et
-            Quis nemo est doloremque tempora qui obcaecati quidem et ullam aliquid? Ut incidunt voluptas ea
-            nostrum quae et dolorem accusantium! Ea nulla harum sit earum aperiam aut accusantium galisum ut
-            nihil ipsam eos consequuntur excepturi eos dolores galisum vel nemo quam. Ut odit nihil sit sequi
-            iusto non aliquam nihil ut blanditiis explicabo At cupiditate voluptatem. Non rerum explicabo est
-            dolore sunt aut quidem tempore eos placeat odit sit officiis nemo. Ut rerum tempora a dolore
-            excepturi quo delectus magnam et nobis autem qui nihil porro ea numquam provident. Sit voluptate
-            voluptas eos nobis nobis ab quam omnis in mollitia quos aut consectetur consectetur ut deleniti
-            soluta aut error sapiente.
-
-            Ad ipsum rerum aut molestiae consequatur quo sunt quia ut commodi illum vel dolorum dolores ut
-            sapiente laudantium cum quia doloribus! Quo eveniet voluptatibus qui officiis obcaecati aut iure
-            sequi in alias odit cum harum aliquid aut libero architecto est doloribus architecto. Et voluptates
-            quis sed ipsa nemo vel dignissimos dicta et iste odit. Eos minima velit et tenetur quidem non autem
-            vitae sed recusandae maxime. Qui dolores unde ut unde blanditiis non sint internos ut eligendi
-            obcaecati 33 omnis possimus qui quas tempore sed voluptate nihil. 33 itaque esse est dolore soluta
-            ut consequatur consequatur qui labore quisquam sit autem consequatur qui adipisci beatae vel
-            officiis facilis. Vel velit exercitationem ut autem voluptatibus eum molestiae rerum non optio modi
-            sed architecto Quis. Est reiciendis doloremque aut rerum temporibus non odio dolore ab enim dolor
-            quo corrupti aliquam. Hic deleniti dicta ut rerum voluptas eum accusantium facere id dolor laborum.
-            Hic temporibus iusto ad explicabo officiis ut totam aliquid ex fuga iusto? Sed sunt voluptates ab
-            nulla debitis non sunt tenetur eum autem possimus qui exercitationem deserunt ut Quis libero. Est
-            aspernatur reiciendis aut placeat ipsam qui Quis suscipit non quae excepturi. Ad omnis similique vel
-            suscipit maiores et officiis earum et officiis sint qui ipsa explicabo. Ab assumenda ipsum a
-            consequatur nesciunt a magni dignissimos non labore deserunt cum cupiditate neque.
-
-            Et sequi dolor in nisi reiciendis ut saepe corrupti aut magni quia qui saepe consequuntur. Hic
-            consequatur voluptas et enim adipisci sit quisquam error eum consequatur neque. 33 laboriosam
-            laborum ea commodi dolores est sequi eius. Non alias quod aut earum molestias est porro impedit est
-            quisquam Quis et dolorem obcaecati est praesentium necessitatibus qui nisi quasi. Quo sapiente neque
-            ea architecto provident qui molestias eveniet sed suscipit reiciendis aut distinctio doloribus. Ut
-            asperiores aperiam et praesentium provident hic numquam voluptas rem dolor necessitatibus est velit
-            pariatur et incidunt recusandae est beatae voluptas? Eum voluptas natus id delectus magni non
-            voluptas quae aut veniam minima. Et velit dolor non voluptatem reiciendis et consectetur ipsam et
-            excepturi culpa et delectus magni aut reprehenderit perferendis vel omnis dolores. Et quam omnis et
-            minima quibusdam et odio fugit sed molestiae deleniti cum perferendis vitae et dolor nihil eos totam
-            voluptatem. Id facilis ipsam eos sint molestiae in temporibus iusto non recusandae molestias ad
-            deleniti sequi! Est voluptatem pariatur qui officia odit et placeat nostrum id doloribus sint qui
-            aperiam ipsum qui quod amet et neque accusamus. Et sunt quis hic voluptatem numquam At magni
-            quaerat. Vel reprehenderit repellat ea reiciendis obcaecati aut esse quibusdam? Qui galisum
-            similique ut sunt ratione ut rerum deserunt et architecto impedit ut dolor voluptate et possimus
-            quia.
-
-            Lorem ipsum dolor sit amet. Sit similique velit qui exercitationem voluptatum qui dolorem quis est
-            ipsam commodi aut esse reprehenderit! Sed tenetur distinctio et illum distinctio sed neque vitae et
-            Quis nemo est doloremque tempora qui obcaecati quidem et ullam aliquid? Ut incidunt voluptas ea
-            nostrum quae et dolorem accusantium! Ea nulla harum sit earum aperiam aut accusantium galisum ut
-            nihil ipsam eos consequuntur excepturi eos dolores galisum vel nemo quam. Ut odit nihil sit sequi
-            iusto non aliquam nihil ut blanditiis explicabo At cupiditate voluptatem. Non rerum explicabo est
-            dolore sunt aut quidem tempore eos placeat odit sit officiis nemo. Ut rerum tempora a dolore
-            excepturi quo delectus magnam et nobis autem qui nihil porro ea numquam provident. Sit voluptate
-            voluptas eos nobis nobis ab quam omnis in mollitia quos aut consectetur consectetur ut deleniti
-            soluta aut error sapiente.
-
-            Ad ipsum rerum aut molestiae consequatur quo sunt quia ut commodi illum vel dolorum dolores ut
-            sapiente laudantium cum quia doloribus! Quo eveniet voluptatibus qui officiis obcaecati aut iure
-            sequi in alias odit cum harum aliquid aut libero architecto est doloribus architecto. Et voluptates
-            quis sed ipsa nemo vel dignissimos dicta et iste odit. Eos minima velit et tenetur quidem non autem
-            vitae sed recusandae maxime. Qui dolores unde ut unde blanditiis non sint internos ut eligendi
-            obcaecati 33 omnis possimus qui quas tempore sed voluptate nihil. 33 itaque esse est dolore soluta
-            ut consequatur consequatur qui labore quisquam sit autem consequatur qui adipisci beatae vel
-            officiis facilis. Vel velit exercitationem ut autem voluptatibus eum molestiae rerum non optio modi
-            sed architecto Quis. Est reiciendis doloremque aut rerum temporibus non odio dolore ab enim dolor
-            quo corrupti aliquam. Hic deleniti dicta ut rerum voluptas eum accusantium facere id dolor laborum.
-            Hic temporibus iusto ad explicabo officiis ut totam aliquid ex fuga iusto? Sed sunt voluptates ab
-            nulla debitis non sunt tenetur eum autem possimus qui exercitationem deserunt ut Quis libero. Est
-            aspernatur reiciendis aut placeat ipsam qui Quis suscipit non quae excepturi. Ad omnis similique vel
-            suscipit maiores et officiis earum et officiis sint qui ipsa explicabo. Ab assumenda ipsum a
-            consequatur nesciunt a magni dignissimos non labore deserunt cum cupiditate neque.
-
-            Et sequi dolor in nisi reiciendis ut saepe corrupti aut magni quia qui saepe consequuntur. Hic
-            consequatur voluptas et enim adipisci sit quisquam error eum consequatur neque. 33 laboriosam
-            laborum ea commodi dolores est sequi eius. Non alias quod aut earum molestias est porro impedit est
-            quisquam Quis et dolorem obcaecati est praesentium necessitatibus qui nisi quasi. Quo sapiente neque
-            ea architecto provident qui molestias eveniet sed suscipit reiciendis aut distinctio doloribus. Ut
-            asperiores aperiam et praesentium provident hic numquam voluptas rem dolor necessitatibus est velit
-            pariatur et incidunt recusandae est beatae voluptas? Eum voluptas natus id delectus magni non
-            voluptas quae aut veniam minima. Et velit dolor non voluptatem reiciendis et consectetur ipsam et
-            excepturi culpa et delectus magni aut reprehenderit perferendis vel omnis dolores. Et quam omnis et
-            minima quibusdam et odio fugit sed molestiae deleniti cum perferendis vitae et dolor nihil eos totam
-            voluptatem. Id facilis ipsam eos sint molestiae in temporibus iusto non recusandae molestias ad
-            deleniti sequi! Est voluptatem pariatur qui officia odit et placeat nostrum id doloribus sint qui
-            aperiam ipsum qui quod amet et neque accusamus. Et sunt quis hic voluptatem numquam At magni
-            quaerat. Vel reprehenderit repellat ea reiciendis obcaecati aut esse quibusdam? Qui galisum
-            similique ut sunt ratione ut rerum deserunt et architecto impedit ut dolor voluptate et possimus
-            quia.
-
-            
 
 
           </p>
@@ -319,9 +286,10 @@
 
     </div>
   </div>
+  </div>
+  </div>
 
 
-   
 
 </body>
 
