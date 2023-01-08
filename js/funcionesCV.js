@@ -1,14 +1,14 @@
-let myMediaQuery = window.matchMedia('(max-width: 600px)');
-let myMediaQuery_1700px = window.matchMedia('(max-width: 1700px)');
+let myMediaQuery_Max1400px = window.matchMedia('(max-width: 1400px)');
+let myMediaQuery_Entre1400Y1900px = window.matchMedia('(min-width: 1400px) and (max-width: 1900px)');
 
 $(document).ready(function(){
 
     //código a ejecutar cuando el DOM está listo para recibir instrucciones.
     console.log("tamo")
-    let myMediaQuery_1700px = window.matchMedia('(max-width: 1800px)');
-
-    //widthChangeCallback(myMediaQuery)
- });
+    //myMediaQuery_1700px.addEventListener('change', widthChangeCallback);
+  widthChangeCallback(myMediaQuery_Entre1400Y1900px);
+    widthChangeCallbackMax1400px(myMediaQuery_Max1400px);
+  });
 // 
 $.ajax({
   url: 'https://randomuser.me/api/',
@@ -39,16 +39,38 @@ $.ajax({
 // }
 // myMediaQuery.addEventListener('change', widthChangeCallback);
 
-function widthChangeCallback(myMediaQuery_1700px) {
-    console.log(myMediaQuery_1700px)
-    if(myMediaQuery_1700px.matches) {
-      document.getElementById("carta").classList.remove("me-5");
-      //document.getElementById("cont-nav").classList.add
-  
-     // document.querySelector("p").textContent = "menos.";
-     } else {
+function widthChangeCallback(myMediaQuery_Entre1400Y1900px) {
+    //console.log(myMediaQuery_Entre1400Y1900px)
+    if(myMediaQuery_Entre1400Y1900px.matches) {
+      // document.getElementById("carta").classList.remove("me-5");  
+      // document.querySelector("p").textContent = "no tengo.";
       document.getElementById("carta").classList.add("me-5");
-      // document.querySelector("p").textContent = "mas+++++";
+      //document.querySelector("p").textContent = "si tengo+++++";
+     } else {
+      // document.getElementById("carta").classList.add("me-5");
+      // document.querySelector("p").textContent = "si tengo+++++";
+      document.getElementById("carta").classList.remove("me-5");  
+      //document.querySelector("p").textContent = "no tengo.";
      }
   }
-  myMediaQuery_1700px.addEventListener('change', widthChangeCallback);
+  function widthChangeCallbackMax1400px(myMediaQuery_Max1400px) {
+    console.log(myMediaQuery_Max1400px)
+    if(myMediaQuery_Max1400px.matches) {
+      // document.getElementById("carta").classList.remove("me-5");  
+      // document.querySelector("p").textContent = "no tengo.";
+      document.getElementById("nav-row").classList.add("container-fluid");
+      //document.querySelector("p").textContent = "si tengo+++++";
+      document.getElementById("div-nav").classList.add("sticky-top");
+      document.getElementById("nav").classList.remove("sticky-top");
+
+     } else {
+      // document.getElementById("carta").classList.add("me-5");
+      // document.querySelector("p").textContent = "si tengo+++++";
+      document.getElementById("nav-row").classList.remove("container-fluid");  
+      //document.querySelector("p").textContent = "no tengo.";
+      document.getElementById("div-nav").classList.remove("sticky-top");
+      document.getElementById("nav").classList.add("sticky-top");
+     }
+  }
+  myMediaQuery_Entre1400Y1900px.addEventListener('change', widthChangeCallback);
+  myMediaQuery_Max1400px.addEventListener('change', widthChangeCallbackMax1400px);
