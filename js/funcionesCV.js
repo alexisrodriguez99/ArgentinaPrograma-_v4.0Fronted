@@ -51,11 +51,11 @@ function scrollToTargetAdjusted(id) {
   var element = document.getElementById(id);
   var headerOffset = 180;
   var elementPosition = element.getBoundingClientRect().top;
-  if (window.innerWidth < 992) {
-    headerOffset = 117;
+  if (window.innerWidth < 576) {
+    headerOffset = 70;
   }
-  else if (window.innerWidth < 576) {
-    headerOffset = 100;
+  else if(window.innerWidth < 992) {
+      headerOffset = 117;
   }
   else if (window.innerWidth >= 1400) {
     headerOffset = 0;
