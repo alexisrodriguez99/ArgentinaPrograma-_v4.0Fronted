@@ -6,291 +6,301 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://kit.fontawesome.com/3a6f024b62.js" crossorigin="anonymous"></script>
-  <script src="jquery-3.6.3.min.js"></script>
 
-  <script src="js/funcionesCV.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</head>
+  <link rel="StyleSheet" href="css/estilosCV.css" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;900&display=swap" rel="stylesheet">
 
 <body>
 
-  <link rel="StyleSheet" href="css/estilosCV.css" type="text/css">
- 
-  <!-- <div class="    sticky-top   " id="div-nav">
-     <nav class="navbar       " id="nav">
-       <div id="nav-row" class="row text-center container-fluid">
-        <div class="col col-xxl-12 align-self-end">
+  <div class="row">
 
-          <a class="navbar-brand" href="#"> <i class="fa-solid fa-phone"></i>
-            <div>
-              Informacion Personal
+    <div class="col col-xxl-2 offset-xxl-1 sticky-top contenerdor-nav">
+
+      <nav class="sticky-top" id="nav">
+
+        <div class="container-fluid">
+
+          <div class="row text-center ">
+
+            <div id="noPadding" class="border col col-xxl-12">
+
+              <a class="navbar-brand px-0 py-lg-5 py-3" onclick="scrollToTargetAdjusted('infoPersonal')" id="link"> <i
+                  class="fa-solid fa-user"></i>
+
+                <div class="fw-bold d-none d-sm-block">
+                  Informacion Personal
+                </div>
+                
+                <span class="fst-italic fw-light d-none d-sm-block">osea "YO"</span>
+              </a>
+
             </div>
 
-          </a>
-          <span>osea "YO"</span>
-        </div>
-        <div class="col col-xxl-12">
-          <a class="navbar-brand" href="#"><i class="fa-solid fa-phone"></i>
-            <div>
-              Contacto
+            <div id="noPadding" class="border border-top-0 col col-xxl-12">
+
+              <a class="navbar-brand px-0 py-lg-5 py-3" onclick="scrollToTargetAdjusted('infoContacto')" id="link"><i
+                  class="fa-solid fa-phone"></i>
+
+                <div class="fw-bold d-none d-sm-block">
+                  Contacto
+                </div>
+
+                <span class="fst-italic fw-light d-none d-sm-block">llamen por favor :(</span>
+
+              </a>
             </div>
-            <span>llamen por favor :(</span>
 
-          </a>
-        </div>
-        <div class="col col-xxl-12">
-          <a class="navbar-brand" href="#">Default</a>
-        </div>
+            <div id="noPadding" class="border  border-top-0 col col-xxl-12">
 
-      </div>
-       
-    </nav>
-  </div> -->
+              <a class="navbar-brand px-0 py-lg-5 py-3" onclick="scrollToTargetAdjusted('infoExperiencia')" id="link">
+                <i class="fa-sharp fa-solid fa-laptop"></i>
 
-  <!-- <div class="container text-center ">
-      <div class="row ">
-        <div class="col align-self-start sticky-top">
-          One of three columns
-        </div>
-        <div class="col align-self-center">
-          One of three columns
-        </div>
-        <div class="col align-self-end">
-          One of three columns
-        </div>
-      </div>
-    </div> -->
-  <!-- </div> -->
-  <div class="cv">
+                <div class="fw-bold d-none d-sm-block">
+                  Estudio/Trabajo
+                </div>
 
-    <!--   <div class="col">
-          <nav class="navbar  sticky-top" style="background-color: blue;">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">AAAAAAAAAAAAAAAA</a>
+                <span class="fst-italic fw-light  d-none d-sm-block">mi experiencia</span>
+              </a>
             </div>
-          </nav>
-        </div> me-5-->
 
-<div class="row">
-        <div class="col">
-          <div class="    sticky-top   " id="div-nav">
-            <!-- lo tengo que hacer absolute al DIV y ponerle posicion fixed// DIV NORMAL y posicion STIKY -->
-            <nav class="navbar       " id="nav">
-              <!-- <div class="container-fluid flex-column" id="cont-nav"> -->
-              <div id="nav-row" class="row text-center container-fluid">
-                <div class="col col-xxl-12 align-self-end">
-        
-                  <a class="navbar-brand" href="#"> <i class="fa-solid fa-phone"></i>
-                    <div>
-                      Informacion Personal
-                    </div>
-        
-                  </a>
-                  <span>osea "YO"</span>
-                </div>
-                <div class="col col-xxl-12">
-                  <a class="navbar-brand" href="#"><i class="fa-solid fa-phone"></i>
-                    <div>
-                      Contacto
-                    </div>
-                    <span>llamen por favor :(</span>
-        
-                  </a>
-                </div>
-                <div class="col col-xxl-12">
-                  <a class="navbar-brand" href="#">Default</a>
-                </div>
-        
-              </div>
-              <!-- <a class="navbar-brand" href="#">Default</a>
-               
-                <a class="navbar-brand" href="#">Default</a>
-               
-                <a class="navbar-brand" href="#">Default</a> -->
-              <!-- </div> -->
-            </nav>
           </div>
-        </div>
-       
-      
-<div class="col">
-    <div class="container-fluid container shadow rounded    carta" id="carta">
-
-      
-      <div class="row text-center align-items-center cabezera">
-        <div class="col-12 col-lg-6">
-          <h1 id="nombre" style="margin: auto;"> </h1>
-
 
         </div>
-        <div class="col-12 col-lg-6 ">
-          <div class="container">
+
+      </nav>
+
+    </div>
+
+
+    <div class="col-12 col-xxl-7 cv">
+
+      <div class="container shadow rounded carta" id="carta">
+
+        <div id="infoPersonal"
+          class="row text-center align-items-center cabezera justify-content-center border-bottom border-2">
+          <div class="col-12 col-lg-6">
+            <h1 id="nombre"> </h1>
+
+          </div>
+
+          <div class="col-12 col-lg-6 ">
+
             <img id="foto" class="img-fluid  img-thumbnail" src="tt" alt="text">
 
           </div>
-        </div>
-        <div class="col">
-          <p>
-            Hola soy Alexis, consumí la <a href="https://randomuser.me/" class="link-dark fw-bold" target="_blank"
-              rel="noopener noreferrer"> API "RANDOM USER GENERATOR"</a>
-            para no tener que ingresar mis datos personales, de la misma forma, casi toda la información para realizar
-            este CV la corresponde a esta API, la cual
-            sirve para generar datos de usuarios aleatorios.Es como Lorem Ipsum, pero para las personas.
 
-          </p>
-          <div class="col">
-            <!-- <div class="container-fluid">
-                  <div class="row text-center align-items-center">
-                    <div class="col">
-                  <p>
-                    INFORACIÓN PERSONAL  
-                  </p>
+          <div class="col-10 col-lg-8">
+
+            <p>
+              Hola soy Alexis, consumí la <a id="linkApi" href="https://randomuser.me/" class="link-dark fw-bold"
+                target="_blank" rel="noopener noreferrer"> API "RANDOM USER GENERATOR"</a>
+              para no tener que ingresar mis datos personales, de la misma forma, casi toda la información para
+              realizar
+              este CV la corresponde a esta API, la cual
+              sirve para generar datos de usuarios aleatorios.Es como Lorem Ipsum, pero para las personas.
+            </p>
+
+            <h2 class="tituloInfPersonal"> INFORMACIÓN PERSONAL</h2>
+
+            <div class="col">
+
+              <div class="container lista" id="lista">
+
+                <div class="row lista-row">
+
+                  <div class="col">
+
+                    <ul class="text-end pe-3">
+
+                      <li id="titulo_nombre">Nombre</li>
+                      <li id="titulo_nacimiento">Nacimiento</li>
+                      <li id="titulo_pais">Pais</li>
+                      <li id="titulo_ciudad">Ciudad</li>
+
+                    </ul>
+
+                  </div>
+
+                  <div class="col">
+
+                    <ul class="text-break border-1 border-start ps-3 infoPersonal text-start">
+                      <li id="nombre">
+                      </li>
+                      <li id="nacimiento">
+                      </li>
+                      <li id="pais">
+                      </li>
+                      <li id="ciudad">
+                      </li>
+                    </ul>
+
+                  </div>
+
                 </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div id="infoContacto"
+          class="ancla row text-center align-items-center justify-content-center border-bottom border-2">
+
+          <div class="col-10 col-lg-8  ">
+            <h2>
+              INFORMACIÓN DE CONTACTO
+            </h2>
+
+            <div class="col">
+
+              <div class="container lista " id="lista">
+
+                <div class="row lista-row ">
+
+                  <div class="col ">
+
+                    <ul class=" text-end pe-3 ">
+                      <li id="titulo_celular">Celular</li>
+                      <li id="titulo_telefono">Teléfeno</li>
+                      <li id="titulo_mail"> Mail </li>
+                      <li id="titulo_calle">Calle</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="col">
+
+                    <ul class="text-break border-1 border-start ps-3 infoContacto text-start">
+                      <li id="celular">
+                      </li>
+                      <li id="telefono">
+                      </li>
+                      <li id="mail">
+                      </li>
+                      <li id="calle">
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <p class="fst-italic">
+              "Lorem ipsum dolor sit amet. Sit similique velit qui exercitationem voluptatum qui dolorem quis est
+              ipsam commodi aut esse reprehenderit! Sed tenetur distinctio et illum distinctio sed neque vitae et
+              Quis nemo est doloremque tempora qui obcaecati quidem et ullam aliquid? Ut incidunt voluptas ea
+              nostrum quae et dolorem accusantium! Ea nulla harum sit earum aperiam aut accusantium galisum ut
+              nihil ipsam eos consequuntur excepturi eos dolores galisum vel nemo quam. Ut odit nihil sit sequi
+              iusto non aliquam nihil ut blanditiis explicabo At cupiditate voluptatem. Non rerum explicabo est
+              dolore sunt aut quidem tempore eos placeat odit sit officiis nemo. Ut rerum tempora a dolore
+              excepturi quo delectus magnam et nobis autem qui nihil porro ea numquam provident. Sit voluptate
+              voluptas eos nobis nobis ab quam omnis in mollitia quos aut consectetur consectetur ut deleniti
+              soluta aut error sapiente."
+            </p>
+
+          </div>
+
+        </div>
+
+        <div id="infoExperiencia" class="row text-center align-items-center justify-content-center">
+
+          <div class="col-10 col-lg-8 blanco ">
+
+            <h2>
+              INFORMACIÓN DE ESTUDIO/TRABAJO
+            </h2>
+
+            <div class="container">
+
+              <div class="row">
+
                 <div class="col-6">
 
-                </div>
-                <div class="col-6">
+                  <h3 class="subTitEstudio">Idiomas</h3>
+                  <p>Ingles - basico</p>
 
                 </div>
+
+                <div class="col-6 border-start border-dark">
+
+                  <h3 class="subTitEstudio">Trabajo</h3>
+                  <p class="ps-3">Desarrollador de back-endDesarrollador de back-end
+                    Universidad Tecnológica Naciona</p>
+                  <p>desde jul. 2021 </p>
+
+                </div>
+
+                <div class="col border-1 border-top  border-dark">
+
+                  <h3 class="subTitEstudio">Educacion</h3>
+                  <p>Técnico Universitario en Programación, en la UTN</p>
+                  <p>finalizada en 2022</p>
+
+                  <div>
+
+                    <h3 class="subTitEstudio">Habilidades</h3>
+                    <img id="prog" class="img-fluid " src="img/c.png" alt="text">
+                    <img id="prog" class="img-fluid " src="img/cSharp.png" alt="text">
+                    <img id="prog" class="img-fluid " src="img/css.png" alt="text">
+                    <img id="prog" class="img-fluid " src="img/html.png" alt="text">
+                    <img id="prog" class="img-fluid " src="img/b.png" alt="text">
+                    <img id="prog" class="img-fluid " src="img/jQuery.png" alt="text">
+                    <div id="vermas">
+                      <img id="prog" class="img-fluid " src="img/laravel.png" alt="text">
+                      <img id="prog" class="img-fluid " src="img/js.png" alt="text">
+                      <img id="prog1" class="img-fluid " src="img/ts2.png" alt="text">
+                      <img id="prog" class="img-fluid " src="img/a.png" alt="text">
+                      <img id="prog" class="img-fluid " src="img/ionic.png" alt="text">
+                      <img id="prog" class="img-fluid " src="img/mySql.png" alt="text">
+                      <img id="prog" class="img-fluid " src="img/php.png" alt="text">
+                      <img id="prog" class="img-fluid " src="img/github.png" alt="text">
+
+                    </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto">
+
+                      <button id="btoVerMas" onclick="verMas()" type="button" class="btn btn-outline-primary ">Ver
+                        mas</button>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
-          </div> -->
-            <p> INFORMACIÓN PERSONAL</p>
-            <div class="izquierda">
-              <ul>
-                <li>Nombre</li>
-                <li>Nacimiento</li>
-                <li>Pais</li>
-                <li>Ciudad</li>
-              </ul>
-            </div>
 
-            <div class="derecha">
-              <ul>
-                <li>
-                  <div id="nombre"></div>
-                </li>
-                <li>
-                  <div id="nacimiento"></div>
-                </li>
-                <li>
-                  <div id="pais"></div>
-                </li>
-                <li>
-                  <div id="ciudad"></div>
-                </li>
-              </ul>
             </div>
 
           </div>
 
         </div>
-        <hr>
+
       </div>
-
-      <div class="row text-center align-items-center">
-        <div class="col  ">
-          <p>
-            INFORMACIÓN DE CONTACTO
-          </p>
-
-          <div class="izquierda">
-            <ul>
-              <li>Celular</li>
-              <li>Teléfeno</li>
-              <li>Mail</li>
-              <li>Calle</li>
-            </ul>
-          </div>
-
-          <div class="derecha">
-            <ul>
-              <li>
-                <div id="celular"></div>
-              </li>
-              <li>
-                <div id="telefono"></div>
-              </li>
-              <li>
-                <div id="mail"></div>
-              </li>
-              <li>
-                <div id="calle"></div>
-              </li>
-            </ul>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet. Sit similique velit qui exercitationem voluptatum qui dolorem quis est
-            ipsam commodi aut esse reprehenderit! Sed tenetur distinctio et illum distinctio sed neque vitae et
-            Quis nemo est doloremque tempora qui obcaecati quidem et ullam aliquid? Ut incidunt voluptas ea
-            nostrum quae et dolorem accusantium! Ea nulla harum sit earum aperiam aut accusantium galisum ut
-            nihil ipsam eos consequuntur excepturi eos dolores galisum vel nemo quam. Ut odit nihil sit sequi
-            iusto non aliquam nihil ut blanditiis explicabo At cupiditate voluptatem. Non rerum explicabo est
-            dolore sunt aut quidem tempore eos placeat odit sit officiis nemo. Ut rerum tempora a dolore
-            excepturi quo delectus magnam et nobis autem qui nihil porro ea numquam provident. Sit voluptate
-            voluptas eos nobis nobis ab quam omnis in mollitia quos aut consectetur consectetur ut deleniti
-            soluta aut error sapiente.
-
-
-
-
-
-
-          </p>
-        </div>
-      </div>
-      <!-- <div class="row">
-                  <div class="col">
-                    1 of 3
-                  </div>
-                  <div class="col">
-                    2 of 3
-                  </div>
-                  <div class="col">
-                    3 of 3
-                  </div>
-                </div> -->
-
-      <!-- </div> -->
-
-      <!-- <div class="container text-center">
-            <div class="row">
-              <div class="col-sm-3">
-                Level 1: .col-sm-3
-              </div>
-              <div class="col-sm-9">
-                <div class="row" style="background-color: red;">
-                  <div class="col-8 col-sm-6" style="background-color: blue;">
-                    Level 2: .col-8 .col-sm-6
-                  </div>
-                  <div class="col-4 col-sm-6">
-                    Level 2: .col-4 .col-sm-6
-                  </div>
-                </div>
-
-                <div class="row" style="background-color: green;">
-                  <div class="col-8 col-sm-6" style="background-color: yellow;">
-                    Level 3: .col-8 .col-sm-6
-                  </div>
-                  <div class="col-4 col-sm-6">
-                    Level 4: .col-4 .col-sm-6
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
 
     </div>
-  </div>
-  </div>
+
   </div>
 
-
-
+  <script src="https://kit.fontawesome.com/3a6f024b62.js" crossorigin="anonymous"></script>
+  <script src="jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="js/funcionesCV.js"></script>
 </body>
 
 </html>
