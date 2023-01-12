@@ -3,4 +3,4 @@
 Este es mi proyecto del CV.
 
 ### Aclaracion
-No toda la información, que se encuentra en este proyecto, no corresponde a mi información personal.
+No toda la información que se encuentra en este proyecto, corresponde a mi información personal.
