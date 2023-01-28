@@ -86,6 +86,8 @@ function verMas() {
     document.getElementById("vermas").style.display = "none";
     document.getElementById("btoVerMas").classList.add("btn-outline-primary");
     document.getElementById("btoVerMas").classList.remove("btn-outline-danger");
+    document.getElementById("btoVerMas").innerHTML = "Ver mas";
+
   }
 }
 
